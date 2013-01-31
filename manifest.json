@@ -56,10 +56,10 @@
   ],
 
   "browser_action": {
-    "default_icon": "assets/icon.png" // http://www.iconfinder.com/icondetails/43055/32/32_pause_upload_video_icon
+    "default_icon": "icon.png" // http://www.iconfinder.com/icondetails/43055/32/32_pause_upload_video_icon
   },
 
   "background": {
-    "scripts": ["assets/jquery-1.9.0.min.js", "main.js"]
+    "scripts": ["main.js"]
   }
 }
