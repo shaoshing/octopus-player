@@ -1,0 +1,65 @@
+// DOC: http://developer.chrome.com/extensions/manifest.html
+//
+// {
+//   // Required
+//   "name": "My Extension",
+//   "version": "versionString",
+//   "manifest_version": 2,
+
+//   // Recommended
+//   "description": "A plain text description",
+//   "icons": { ... },
+//   "default_locale": "en",
+
+//   // Pick one (or none)
+//   "browser_action": {...},
+//   "page_action": {...},
+//   "theme": {...},
+//   "app": {...},
+
+//   // Add any of these that you need
+//   "background": {"persistent": false, ...},
+//   "background": {"persistent": true, ...},
+//   "chrome_url_overrides": {...},
+//   "content_scripts": [...],
+//   "content_security_policy": "policyString",
+//   "file_browser_handlers": [...],
+//   "homepage_url": "http://path/to/homepage",
+//   "incognito": "spanning" or "split",
+//   "intents": {...}
+//   "key": "publicKey",
+//   "minimum_chrome_version": "versionString",
+
+//   "nacl_modules": [...],
+//   "offline_enabled": true,
+//   "omnibox": { "keyword": "aString" },
+//   "options_page": "aFile.html",
+//   "permissions": [...],
+//   "plugins": [...],
+//   "requirements": {...},
+//   "update_url": "http://path/to/updateInfo.xml",
+//   "web_accessible_resources": [...],
+//   "sandbox": [...]
+// }
+
+
+{
+  "manifest_version": 2,
+
+  "name": "Test",
+  "description": "",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "*://*/*"
+  ],
+
+  "browser_action": {
+    "default_icon": "assets/icon.png" // http://www.iconfinder.com/icondetails/43055/32/32_pause_upload_video_icon
+  },
+
+  "background": {
+    "scripts": ["assets/jquery-1.9.0.min.js", "main.js"]
+  }
+}
