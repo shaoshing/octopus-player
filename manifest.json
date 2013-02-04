@@ -61,5 +61,13 @@
 
   "background": {
     "scripts": ["main.js"]
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["inject.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources":["quicktime.js"]
 }
